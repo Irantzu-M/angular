@@ -1,0 +1,27 @@
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>email</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let persona of personas">
+            <td>
+                {{ persona.id }}
+            </td>
+            <td>
+                {{ persona.nombre }}
+            </td>
+            <td>
+                {{ persona.email }}
+            </td>
+            <td>
+                <a>Editar</a>
+                <a>Borrar</a>
+            </td>
+        </tr>
+    </tbody>
+</table>

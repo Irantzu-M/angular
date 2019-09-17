@@ -18,9 +18,22 @@ export class PersonasComponent implements OnInit {
 
   ngOnInit() {
     //est lo usamos para llamar al personas service cuando iniciamos el coponente
-    this.servicioPersona.getPersonas().subscribe(
-      personas => this.personas = personas//esta sentencia no la acabo de enternder
-    );
+    this.servicioPersona.getPersonas().subscribe(personasRecibidas => this.personas = personasRecibidas);
+    //esta es una sentencia que es la forma abreviada de lo que explicamos más abajo
+    //estamos pasando una función como si fuera una variable
+
+
+      /*equivale a algo así CON FUNCIÓN TRADICIONAL
+      this.personaService.getPersonas().subscribe(this.recibirPersonas);
+      recibirPersonas(personasRecibidas: Personas[]){
+        return this.personas = personasRecibidas;
+      }
+      */
+
+      /*otra función más intermedia es CON FUNCIÓN ANÓNIMA
+      this.personaService.getPersonas().subscribe(function(personasRecibidas: Personas[]){
+        return this.personas = personasRecibidas;
+      })*/
   }
 
 }

@@ -6,6 +6,7 @@ import { PersonasComponent } from './personas/personas.component';
 
 import { HttpClientModule }    from '@angular/common/http';//habilitar servicios http para que los clientes HTTP sean accesibles desde cualquier sitio de la app
 import { DetallePersonaComponent } from './detalle-persona/detalle-persona.component';
+import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
@@ -16,8 +17,8 @@ import { DetallePersonaComponent } from './detalle-persona/detalle-persona.compo
   ],
   imports: [
     BrowserModule,
-    //me falta el appRouting?
-    //AppRoutingModule,
+    //me falta el appRouting? sí, lo usamos para poder enlazar elementos desde  todos lados
+    AppRoutingModule,
     HttpClientModule,
   ],
   providers: [],

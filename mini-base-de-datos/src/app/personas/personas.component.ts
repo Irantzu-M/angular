@@ -10,6 +10,7 @@ import { PersonasService } from '../personas.service';//importamos aquí el serv
 export class PersonasComponent implements OnInit {
   
   personas: Persona[];
+  personaSeleccionada: Persona;
 
   constructor(private servicioPersona: PersonasService) {
     //al constructor le pasamos el servicioDepersonas
@@ -23,17 +24,22 @@ export class PersonasComponent implements OnInit {
     //estamos pasando una función como si fuera una variable
 
 
-      /*equivale a algo así CON FUNCIÓN TRADICIONAL
+      /*//equivale a algo así CON FUNCIÓN TRADICIONAL
       this.personaService.getPersonas().subscribe(this.recibirPersonas);
       recibirPersonas(personasRecibidas: Personas[]){
         return this.personas = personasRecibidas;
       }
       */
 
-      /*otra función más intermedia es CON FUNCIÓN ANÓNIMA
+      /*//otra función más intermedia es CON FUNCIÓN ANÓNIMA
       this.personaService.getPersonas().subscribe(function(personasRecibidas: Personas[]){
         return this.personas = personasRecibidas;
       })*/
+  }
+
+  
+  onEdit(personaClickada: Persona){
+    this.personaSeleccionada = this.personaSeleccionada;
   }
 
 }

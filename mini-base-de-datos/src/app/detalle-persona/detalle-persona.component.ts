@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./detalle-persona.component.scss']
 })
 export class DetallePersonaComponent implements OnInit {
-
+  //private seleccionado = 
   constructor() { }
 
   ngOnInit() {
   }
+
 
 }

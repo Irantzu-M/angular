@@ -6,6 +6,12 @@ import { PersonasService } from '../personas.service';//importamos aquí el serv
   selector: 'app-personas',
   templateUrl: './personas.component.html',
   styleUrls: ['./personas.component.scss']
+  //se pueden poner estilos directamente sin plantilla, pero no acepta Sass
+  /*styles: [`
+    th{
+      color: blue;
+    }
+  `]*/
 })
 export class PersonasComponent implements OnInit {
   

@@ -17,4 +17,5 @@ export class PersonasService {
     //return of(this.personas);
     return this.http.get<Persona[]>(this.url);
   }
+
 }

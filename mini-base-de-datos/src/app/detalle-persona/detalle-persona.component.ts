@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { PersonasService } from '../personas.service';
 
 @Component({
   selector: 'app-detalle-persona',
@@ -6,8 +8,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./detalle-persona.component.scss']
 })
 export class DetallePersonaComponent implements OnInit {
-  //private seleccionado = 
-  constructor() { }
+
+  constructor(
+    /*private route: ActivatedRoute,
+    private heroService: PersonasService,
+    private location: Location*/
+  ) {
+
+    
+   }
 
   ngOnInit() {
   }

@@ -7,7 +7,7 @@ import { DetallePersonaComponent } from './detalle-persona/detalle-persona.compo
 
 const routes: Routes = [
     //{ path: '', pathMatch: 'full', redirectTo: '/detalle-persona' },
-    //{ path: 'personas', component: PersonasComponent },
+    { path: 'personas', component: PersonasComponent },
     { path: 'detalle', component: DetallePersonaComponent },
     { path: 'detalle/:id', component: DetallePersonaComponent }
 ];

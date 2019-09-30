@@ -16,4 +16,9 @@ export class PersonaService {
   getMockPersonas(): Observable<Persona[]> {
     return of(PERSONAS);
   }
+
+  
+  getPersona(id: number): Observable<Persona> {
+    return of(PERSONAS.find(persona => persona.id === id));
+  }
 }

@@ -4,9 +4,9 @@ import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { PersonasComponent } from './personas/personas.component';
 import { DetallePersonaComponent } from './detalle-persona/detalle-persona.component';
+import { AppComponent } from './app.component';
 
 const routes: Routes = [
-    //{ path: '', pathMatch: 'full', redirectTo: '/detalle-persona' },
     { path: 'personas', component: PersonasComponent },
     { path: 'detalle', component: DetallePersonaComponent },
     { path: 'detalle/:id', component: DetallePersonaComponent }

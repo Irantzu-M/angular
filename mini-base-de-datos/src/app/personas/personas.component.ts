@@ -10,6 +10,7 @@ import { PersonaService } from '../persona.service';//importamos aquí el servic
 export class PersonasComponent implements OnInit {
   
   personas: Persona[];
+  personaSeleccionada: Persona;
 
   constructor(private servicioPersona: PersonaService) {
   }

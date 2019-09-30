@@ -17,7 +17,6 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   imports: [
     BrowserModule,
-    //me falta el appRouting? sí, lo usamos para poder enlazar elementos desde  todos lados
     AppRoutingModule,
     HttpClientModule,
   ],

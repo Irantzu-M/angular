@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { PersonasService } from '../personas.service';
+import { PersonaService } from '../persona.service';
 
 @Component({
   selector: 'app-detalle-persona',

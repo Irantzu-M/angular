@@ -13,7 +13,7 @@ export class PersonaService {
 
   constructor() {}
   
-  getPersonas(): Observable<Persona[]> {
+  getMockPersonas(): Observable<Persona[]> {
     return of(PERSONAS);
   }
 }

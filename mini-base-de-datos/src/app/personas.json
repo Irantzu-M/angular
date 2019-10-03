@@ -1,17 +1,19 @@
-[
-    {
-        "id": "1",
-        "nombre": "Nombre1",
-        "email": "email@1.com"
-    },
-    {
-        "id": "2",
-        "nombre": "Nombre2",
-        "email": "email@2.com"
-    },
-    {
-        "id": "3",
-        "nombre": "Nombre3",
-        "email": "email@3.com"
-    }
-]
+{
+    "personas": [
+        {
+            "id": "1",
+            "nombre": "Nombre1",
+            "email": "email@1.com"
+        },
+        {
+            "id": "2",
+            "nombre": "Nombre2",
+            "email": "email@2.com"
+        },
+        {
+            "id": "3",
+            "nombre": "Nombre3",
+            "email": "email@3.com"
+        }
+    ]
+}

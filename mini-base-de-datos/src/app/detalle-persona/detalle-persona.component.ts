@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 //import { Persona } from '../personas/persona';
 import { Persona } from '../personas/persona';
+import { PersonasComponent } from '../personas/personas.component';
 import { PersonaService } from '../persona.service';
 
 @Component({
@@ -10,8 +11,9 @@ import { PersonaService } from '../persona.service';
   styleUrls: ['./detalle-persona.component.scss']
 })
 export class DetallePersonaComponent implements OnInit {
-  //personaSeleccionada : Persona = { id: 11, nombre: 'Dr Nice' , email: 'mail@mail.mail'};
-  personaSeleccionada : Persona;
+
+  @Input() personaSeleccionada : Persona;
+  persona : Persona;
 
   constructor(
     private route: ActivatedRoute,
@@ -27,7 +29,7 @@ export class DetallePersonaComponent implements OnInit {
   getPersona(): void {
     const id = +this.route.snapshot.paramMap.get('id');
     this.personaService.getPersona(id)
-      .subscribe(persona => this.personaSeleccionada = persona);
+      .subscribe(personaSeleccionada => this.personaSeleccionada = personaSeleccionada);
   }
 
 
